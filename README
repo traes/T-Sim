@@ -1,0 +1,8 @@
+T-Sim Helicopter Simulator
+(c) Thomas Raes (thomas.raes@pandora.be)
+Licensed under the GPL (see LICENSE)
+
+compilation: cmake . && make
+execution: ./T-Sim
+documentation: doxygen Doxyfile 
+(Documentation will be generated in the "doc" directory)

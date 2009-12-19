@@ -1,0 +1,5 @@
+all: 
+	g++ `sdl-config --libs --cflags` -Wall -lm -lGL -lGLU -o T-Sim T-Sim.cpp Math/Vector3D.cpp Simulation/Output/Camera.cpp Simulation/Output/Color.cpp Simulation/Output/OutputManager.cpp Simulation/Output/2D/Helicopter/InstrumentPanel2DRepresentation.cpp Simulation/Output/3D/Terrain/Terrain3DRepresentation.cpp Simulation/Output/3D/Terrain/TerrainHouse3DRepresentation.cpp Simulation/Output/3D/Terrain/TerrainTile3DRepresentation.cpp Simulation/Output/3D/Helicopter/Helicopter3DRepresentation.cpp Simulation/Output/3D/Helicopter/Instrument3DRepresentation.cpp Simulation/Output/3D/Helicopter/InstrumentPanel3DRepresentation.cpp Simulation/Output/3D/Helicopter/Rotor3DRepresentation.cpp Simulation/World/World.cpp Simulation/World/Helicopter/Helicopter.cpp Simulation/World/Helicopter/Instrument.cpp Simulation/World/Helicopter/InstrumentPanel.cpp Simulation/World/Helicopter/Rotor.cpp Simulation/World/Terrain/Terrain.cpp Simulation/World/Terrain/TerrainHouse.cpp Simulation/World/Terrain/TerrainTile.cpp Simulation/World/Terrain/TerrainTileStore.cpp Simulation/Simulation.cpp Simulation/Input/InputManager.cpp
+	
+run: all
+	T-Sim	
